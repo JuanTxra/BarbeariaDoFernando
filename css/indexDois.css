@@ -1,0 +1,383 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202020!Important;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    background-color:  #182833;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.navUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@font-face {
+    font-family: caclaskocondensed;
+    src: url(../fonts/caclaskocondensed.woff) format('woff');
+}
+
+.navUl div li {
+    color: #1f4762;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 2em;
+    font-family: caclaskocondensed;
+    src: url(../fonts/caclaskocondensed.woff) format('woff');
+}
+
+@font-face {
+    font-family: Myfont-Regular;
+    src: url(../fonts/Myfont-Regular.woff) format('woff');
+}
+
+.navUl div li:first-letter {
+    letter-spacing: -12px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Myfont-Regular;
+    src: url(../fonts/Myfont-Regular.woff)
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+li a:hover {
+    text-decoration: none;
+    color: #fda300;
+}
+
+.backgroundAmarelo {
+    padding: 1em;
+    background: linear-gradient(to bottom, #fda300 0%, #ffc619 100%);
+    box-shadow: #FBF3EF 0px 0px 0px 2px;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.box1 img {
+    object-fit: cover;
+}
+
+.topnavFix {
+    display: none;
+}
+
+
+/* CARD PREÇOS*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.background {
+    padding: 0 25px 25px;
+    position: relative;
+    width: 100%;
+}
+
+.background::after {
+    content: '';
+    background: #ffc619;
+    background: -moz-linear-gradient(top, #fda300 0%, #ffc619 100%);
+    background: -webkit-linear-gradient(top, #fda300 0%, #ffc619 100%);
+    background: linear-gradient(to bottom, #fda300 0%, #ffc619 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4', GradientType=0);
+    height: 350px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+@media (min-width: 900px) {
+    .background {
+        padding: 0 0 25px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 50px 0 0;
+    max-width: 960px;
+    width: 100%;
+}
+
+.panel {
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.pricing-table {
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+    .pricing-table {
+        flex-direction: row;
+    }
+}
+
+.pricing-table * {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+    padding: 25px;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 900px) {
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        flex-basis: 100%;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    color: #016FF9;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 50px 0 25px;
+}
+
+.pricing-features-item {
+    border-top: 1px solid #e1f1ff;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+    color: #016FF9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348EFE;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+    background-color: #48aaff;
+    color: #fff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+    background-color: #269aff;
+}
+
+.backgroundSobreNos {
+    margin-top: 20%;
+    display: flex;
+    width: 100%;
+    height: 20vw;
+    background: -moz-linear-gradient(top, #ffc619 0%, #fda300 100%);
+    background: -webkit-linear-gradient(top, #ffc619 0%, #fda300 100%);
+    background: linear-gradient(to bottom, #ffc619 0%, #fda300 100%);
+    position: relative;
+    justify-content: center;
+}
+
+.expanded {
+    width:100%;
+    height: 20vw;
+    margin-top: 30vw;
+    background: -moz-linear-gradient(top, #ffc619 0%, #fda300 100%);
+    background: -webkit-linear-gradient(top, #ffc619 0%, #fda300 100%);
+    background: linear-gradient(to bottom, #ffc619 0%, #fda300 100%);
+    position: relative;
+}
+
+.imgRedonda {
+    border-radius: 50%;
+    max-width: 500px;
+    max-height: auto;
+    position: absolute;
+    top: -150px;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right: 0;
+  }
+
+ 
+.expandedBottom {
+    width:100%;
+    height: 20vw;
+    position: relative;
+}
+
+  .tituloSobreNos {
+    color: white;
+    font-size: 5em;
+    max-width: 600px;
+    max-height: auto;
+    position: absolute;
+    top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+
+@media screen and (max-width: 900px) {
+    .displayNone {
+        display: none;
+    }
+    .container {
+        margin: 0 auto;
+        padding: 50px 0;
+        width: 80%;
+    }
+    .navUl {
+        display: none;
+    }
+    .topnavFix {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .topnav {
+        background-color: #ffc619;
+        box-shadow: #FBF3EF 0px 0px 0px 2px;
+    }
+    .topnav .nomeLogo {
+        color: #1f4762;
+        font-weight: bold;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+    /* Style navigation menu links */
+    .topnav a {
+        color: #1f4762;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 2em;
+        display: block;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .topnav a:first-child {
+        color: #1f4762;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 2em;
+        display: block;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: caclaskocondensed;
+        src: url(../fonts/caclaskocondensed.woff) format('woff');
+    }
+
+
+    .topnav a:first-child::first-letter {
+        color: #1f4762;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: -12px;
+        font-family: Myfont-Regular;
+        src: url(../fonts/Myfont-Regular.woff)
+    }
+    /* Style the hamburger menu */
+    a.icon {
+        color: beige;
+        font-size: 2em;
+    }
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    @font-face {
+        font-family: Myfont-Regular;
+        src: url(../fonts/Myfont-Regular.woff) format('woff');
+    }
+    
+    .navUl div li:first-letter {
+        letter-spacing: -12px;
+        font-size: 1.5em;
+        font-weight: bold;
+        font-family: Myfont-Regular;
+        src: url(../fonts/Myfont-Regular.woff)
+    }
+}
